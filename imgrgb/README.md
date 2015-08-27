@@ -13,7 +13,7 @@ Both videos also use a squared penalty for empty neighbors to coerce subsequent 
 The static images follow the following naming convention:
 
 |imgrgb|Color Distance Metric|Sorting Function|Dimensions|Seed|Additional Weights|
-|:------|:---------------------:|:----------------:|:----------:|----:|------------------:|
+|:------|:---------------------:|:----------------:|:----------:|:----:|------------------:|
 |imgrgb|  avgSqNhbr  |colorComp1_2_0|1023-511|s109103113|.png|
 |imgrgb|  avgSqNhbr  |hueComparator|1727-1023|s109103113|-neglin.png|
 
