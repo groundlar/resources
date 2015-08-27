@@ -21,7 +21,18 @@ So for the two images:
 imgrgb_avgSqNhbr_colorComp1_2_0_1023-511s109103113.png
 imgrgb_avgSqNhbr_hueComparator_1727-1023s109103113-neglin.png
 
+
 The first would sort the colors by B -> R -> G, while the second would sort first by hue, then saturation, then brightness. The images use the same seed, but vary in size (1023x511 vs 1727x1023). The second image coerces pixels towards previously filled pixels by introducing a negative linear term in the placement algorithm (penalizing empty pixels).
+
+You can see the differences below:
+
+![][noweighting-color]
+
+![][weighting-hue]
+
+[noweighting-color]:https://github.com/skycook/resources/blob/master/imgrgb/imgrgb_avgSqNhbr_colorComp1_2_0_1023-511s109103113.png
+[weighting-hue]:https://github.com/skycook/resources/blob/master/imgrgb/imgrgb_avgSqNhbr_hueComparator_1727-1023s109103113-neglin.png
+
 
 
 
