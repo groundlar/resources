@@ -7,7 +7,7 @@ HSB_center_sq.mp4 begins with an array of colors sorted first by Hue, then by Sa
 
 In contrast, RBG_disperse_sq.mp4 first sorts the colors according to (R / (G+B)), then by (G / B) in the event of equal primary values (uses RGB color space).The placement algorithm also uses a linear adjustment to coerce pixels _away from_ the seed pixel, resulting in a more "filamentous" growth pattern.
 
-Both videos also use a squared penalty for empty neighbors to coerce subsequent pixels towards areas of higher "pixel density" -- that is, the next pixel favors having previously-placed neighbors.
+Both videos also use a squared penalty for empty neighbors to coerce subsequent pixels towards areas of higher "pixel density" -- that is, the next pixel favors having previously-placed neighbors. This helps alleviate some of the "noise" or "artifacts" present in many of the original renders.
 
 
 The static images follow the following naming convention:
